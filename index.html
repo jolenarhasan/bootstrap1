@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--custom boots  لازم احطه اخر ملف-->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top bg-dark navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">OSAKA</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">SERVICES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PROTFOLIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PRICE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CLIENT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">BLOG</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="header vh-100">
+      <div class="container h-100">
+        <div
+          class="header-content d-flex flex-column justify-content-center h-100 text-white"
+        >
+          <h1>Robin Steel</h1>
+          <p>Developer, Graphics & Web Design</p>
+          <a href="#" class="text-decoration-none text-mainColor"
+            >view protfoilo</a
+          >
+          <div class="social-media d-flex gap-4 mt-5">
+            <div class="icon border rounded-circle text-center"><i class="fa-brands fa-facebook-f fa-sm"></i></div>
+            <div class="icon border rounded-circle text-center"><i class="fa-brands fa-linkedin-in fa-sm"></i></div>
+            <div class="icon border rounded-circle text-center"><i class="fa-brands fa-instagram fa-sm"></i></div>
+            <div class="icon border rounded-circle text-center"><i class="fa-brands fa-youtube fa-sm"></i></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="container">
+          <h2 class="text-center pt-5">Our Clients</h2>
+          <div id="carouselExample" class="carousel slide pt-3 pb-5">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="client d-flex flex-column align-items-center">
+                  <img
+                    src="./assets/img/clients/client.jpg"
+                    class="img-fluid rounded-circle"
+                  />
+                  <h3>Jolenar Hasan</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Doloribus, quam!
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="client d-flex flex-column align-items-center">
+                  <img
+                    src="./assets/img/clients/client.jpg"
+                    class="img-fluid rounded-circle"
+                  />
+                  <h3>Jolenar Hasan</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Doloribus, quam!
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="client d-flex flex-column align-items-center">
+                  <img
+                    src="./assets/img/clients/client.jpg"
+                    class="img-fluid rounded-circle"
+                  />
+                  <h3>Jolenar Hasan</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Doloribus, quam!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <nav>
+          <div
+            class="nav justify-content-center nav-tabs"
+            id="nav-tab"
+            role="tablist"
+          >
+            <button
+              class="nav-link active"
+              id="nav-All-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-All"
+              type="button"
+              role="tab"
+              aria-controls="nav-All"
+              aria-selected="true"
+            >
+              All
+            </button>
+            <button
+              class="nav-link"
+              id="nav-Web-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-Web"
+              type="button"
+              role="tab"
+              aria-controls="nav-Web"
+              aria-selected="false"
+            >
+              Web
+            </button>
+            <button
+              class="nav-link"
+              id="nav-Mobile-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-Mobile"
+              type="button"
+              role="tab"
+              aria-controls="nav-Mobile"
+              aria-selected="false"
+            >
+              Mobile
+            </button>
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="nav-All"
+            role="tabpanel"
+            aria-labelledby="nav-All-tab"
+            tabindex="0"
+          >
+            <div class="container-fluid">
+              <div class="row gy-3">
+                <div class="col-md-3">
+                  <img
+                    src="./assets/img/projects/mobile1.jpg"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="col-md-3">
+                  <img
+                    src="./assets/img/projects/mobile2.jpg"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="col-md-3">
+                  <img
+                    src="./assets/img/projects/mobile3.jpg"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="col-md-3">
+                  <img src="./assets/img/projects/web1.jpg" class="img-fluid" />
+                </div>
+                <div class="col-md-3">
+                  <img src="./assets/img/projects/web2.jpg" class="img-fluid" />
+                </div>
+                <div class="col-md-3">
+                  <img src="./assets/img/projects/web3.jpg" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="nav-Web"
+            role="tabpanel"
+            aria-labelledby="nav-Web-tab"
+            tabindex="0"
+          >
+            <div class="container-fluid">
+              <div class="row gy-3">
+                <div class="col-md-3">
+                  <img src="./assets/img/projects/web1.jpg" class="img-fluid" />
+                </div>
+                <div class="col-md-3">
+                  <img src="./assets/img/projects/web2.jpg" class="img-fluid" />
+                </div>
+                <div class="col-md-3">
+                  <img src="./assets/img/projects/web3.jpg" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="nav-Mobile"
+            role="tabpanel"
+            aria-labelledby="nav-Mobile-tab"
+            tabindex="0"
+          >
+            <div class="container-fluid">
+              <div class="row gy-3">
+                <div class="col-md-3">
+                  <img
+                    src="./assets/img/projects/mobile1.jpg"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="col-md-3">
+                  <img
+                    src="./assets/img/projects/mobile2.jpg"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="col-md-3">
+                  <img
+                    src="./assets/img/projects/mobile3.jpg"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
